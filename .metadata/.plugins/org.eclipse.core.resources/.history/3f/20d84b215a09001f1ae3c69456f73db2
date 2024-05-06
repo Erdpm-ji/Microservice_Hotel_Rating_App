@@ -1,0 +1,2 @@
+spring.application.name=UserService
+management.endpoints.web.exposure.include=true

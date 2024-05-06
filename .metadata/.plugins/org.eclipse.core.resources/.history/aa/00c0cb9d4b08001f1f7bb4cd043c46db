@@ -1,0 +1,9 @@
+package com.hotel.repositary;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.hotel.service.enitity.Hotel;
+
+public interface HotelRepositary extends JpaRepository<Hotel, String>{
+
+}

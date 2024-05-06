@@ -1,0 +1,12 @@
+package com.user.service.payload;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+
+public class ApiResponse {
+	private String massage;
+	private boolean isSuccess;
+	private HttpStatus status;
+	private HttpStatusCode statusCode;
+	
+}

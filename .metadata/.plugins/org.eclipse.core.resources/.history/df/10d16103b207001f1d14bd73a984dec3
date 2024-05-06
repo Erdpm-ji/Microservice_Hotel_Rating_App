@@ -1,0 +1,27 @@
+package com.user.service.repositary;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.user.service.entity.User;
+
+
+@Repository
+public class UserRepositaryImpl implements UserRepositary{
+
+	@Override
+	public User save(User user) {
+		return save;
+	}
+
+	@Override
+	public User findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+	
+}

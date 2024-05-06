@@ -1,0 +1,7 @@
+package com.user.service.repositary;
+
+import org.springframework.stereotype.Repository;
+
+public interface UserRepositary extends Repository{
+
+}

@@ -1,0 +1,15 @@
+package com.user.service.entity;
+
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.Column;
+
+public class Hotel {
+	private Long id;
+	private String hotelId;
+
+	private String name;
+
+	private String address;
+
+	private String about;
+}

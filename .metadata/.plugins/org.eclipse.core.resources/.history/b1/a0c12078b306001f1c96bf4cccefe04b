@@ -1,0 +1,14 @@
+package com.user.service.userdetails;
+
+import org.springframework.stereotype.Repository;
+
+import jakarta.persistence.Id;
+
+
+@Repository
+public class UserDetails {
+	@Id
+	private long id;
+	private String name;
+	
+}

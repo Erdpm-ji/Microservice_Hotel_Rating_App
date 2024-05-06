@@ -1,0 +1,21 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservice
+    username: postgres
+    password: root
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+eureka:
+  instance:
+    appname: Hotel-Service
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true

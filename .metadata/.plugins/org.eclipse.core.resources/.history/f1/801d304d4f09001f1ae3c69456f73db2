@@ -1,0 +1,39 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: User-Service
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/microservice
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+    
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+    appname: User-Service
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - enabled
+   

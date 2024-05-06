@@ -1,0 +1,8 @@
+package com.user.service.payload;
+
+public class ApiResponse {
+	private String massage;
+	private boolean isSuccess;
+	private String statusCode;
+	
+}

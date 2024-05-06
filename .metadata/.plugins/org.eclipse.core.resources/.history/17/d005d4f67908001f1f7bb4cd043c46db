@@ -1,0 +1,19 @@
+package com.rating.service.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.rating.service.entity.Rating;
+
+@Service
+public interface RatingServices {
+
+		Rating createReting(Rating rating);
+		
+		List<Rating> getAllRatings();
+		
+		List<Rating> findAllRatingByUserId(String userId);
+		
+		List<Rating> findAllRationgByHotelId(String hotelId);
+}

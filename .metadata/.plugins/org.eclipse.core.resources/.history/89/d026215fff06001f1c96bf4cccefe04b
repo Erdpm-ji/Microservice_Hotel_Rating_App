@@ -1,0 +1,20 @@
+package com.user.service.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.user.service.entity.User;
+import com.user.service.repositary.UserRepositaryImpl;
+
+@Service
+public class UserServices {
+
+	@Autowired
+	private UserRepositaryImpl repositary;
+	
+	public User creteUsers(User user) {
+		repositary.save(user);
+		return repositary.save(user);;
+	}
+	
+}

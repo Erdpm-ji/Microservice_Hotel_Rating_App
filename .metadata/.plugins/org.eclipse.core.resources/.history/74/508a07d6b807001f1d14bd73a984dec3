@@ -1,0 +1,23 @@
+package com.user.service.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.user.service.entity.User;
+import com.user.service.services.UserServices;
+
+@RestController
+public class UserController {
+	
+	@Autowired
+	private UserServices services;
+
+	@PostMapping("/user")
+	public User CreateUser(@RequestBody User user) {
+		System.out.println(user);
+		return services.saveUser(user);
+	}
+	
+}

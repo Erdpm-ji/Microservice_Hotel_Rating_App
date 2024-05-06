@@ -1,0 +1,21 @@
+package com.hotel.service.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hotel.service.enitity.Hotel;
+import com.hotel.service.hotelservices.HotelServices;
+
+@RestController
+public class HotelController {
+	
+	@Autowired
+	private HotelServices services;
+	
+	private ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel){
+		Hotel newHotel = services.createHotel(hotel);
+		return ResponseEntity.ok(newHotel);
+	}
+}

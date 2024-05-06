@@ -1,0 +1,16 @@
+package com.hotel.service.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.hotel.service.payload.ApiResponce;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+	public ResponseEntity<ApiResponce> handlerHotelNotFoundException(HotelNotFoundException ex){
+		ApiResponce responce = ApiResponce.builder().message(ex.getMessage()).isSuccess(true).status(HttpStatus.NOT_FOUND).build();
+		return ResponseEntity<ApiResponce>(responce,HttpStatus.NOT_FOUND);
+	}
+}

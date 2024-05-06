@@ -1,0 +1,5 @@
+package com.user.service.externalcontroller;
+
+public class HotelController {
+
+}

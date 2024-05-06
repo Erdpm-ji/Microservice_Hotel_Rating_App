@@ -1,0 +1,9 @@
+package com.hotel.service.enitity;
+
+@
+public class Hotel {
+	private Long id;
+	private String hotelId;
+	private String name;
+	private String address;
+}

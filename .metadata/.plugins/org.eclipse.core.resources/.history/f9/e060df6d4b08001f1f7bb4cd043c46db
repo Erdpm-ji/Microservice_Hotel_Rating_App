@@ -1,0 +1,40 @@
+package com.hotel.service;
+
+import java.util.List;
+
+import com.hotel.service.enitity.Hotel;
+import com.hotel.service.hotelservices.HotelServices;
+
+public class HotelServiceImpl implements HotelServices{
+
+	@Override
+	public Hotel createHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Hotel> findAllHotels() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel findbyHotelId(String hotelId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel deleteByHotelId(String hotelId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel updateByHotelId(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

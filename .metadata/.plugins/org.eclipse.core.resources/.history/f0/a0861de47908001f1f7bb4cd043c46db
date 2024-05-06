@@ -1,0 +1,16 @@
+package com.rating.service.repositary;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.rating.service.entity.Rating;
+
+public interface RatingRepositary extends MongoRepository<Rating, String>{
+	
+	List<Rating> findByUserId(String userId);
+	
+	List<Rating> findByHotelId(String hotelId);
+	
+
+}

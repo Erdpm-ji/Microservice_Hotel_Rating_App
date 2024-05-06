@@ -1,0 +1,13 @@
+package com.user.service.repositary;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.user.service.entity.User;
+
+public class UserRepositaryImpl{
+	
+	
+
+}

@@ -1,0 +1,35 @@
+package com.rating.service.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.rating.service.entity.Rating;
+import com.rating.service.repositary.RatingRepositary;
+
+public class RatingServiceImpl implements RatingServices{
+
+	@Autowired
+	private RatingRepositary repositary;
+	
+	@Override
+	public Rating createReting(Rating rating) {
+		return repositary.save(rating);
+	}
+
+	@Override
+	public List<Rating> ratings() {
+		return repositary.findAll();
+	}
+
+	@Override
+	public List<Rating> findAllRatingByUserId(String UserId) {
+		return repositary.findByUserId(UserId);
+	}
+
+	@Override
+	public List<Rating> findAllRationgByHotelId(String HotelId) {
+		return repositary.findByHotelId(HotelId);
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.user.service.userdetails;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table
+public class UserDetails {
+	@Id
+	@Column(name = "ID")
+	private Long id;
+	
+	@Column(name ="NAME")
+	private String name;
+	
+	@Column(name = "GMAIL")
+	private String gmail;
+	
+	@Column(name = "ABOUT")
+	private String about;
+	
+}

@@ -1,0 +1,13 @@
+package com.user.service.externalservice;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.user.service.entity.Rating;
+
+@FeignClient
+public interface RatingService {
+	
+	ResponseEntity<Rating> getRating(@PathVariable String ratingId);
+}

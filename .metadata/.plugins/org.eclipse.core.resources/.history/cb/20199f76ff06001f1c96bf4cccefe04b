@@ -1,0 +1,16 @@
+package com.user.service.repositary;
+
+import java.util.List;
+
+import org.springframework.data.repository.Repository;
+
+import com.user.service.entity.User;
+
+public interface UserRepositary extends Repository<User, Long>{
+
+	List<User> findAllUsers();
+	
+	User save();
+	
+	User findById(Long id);
+}

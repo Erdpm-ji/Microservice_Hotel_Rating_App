@@ -1,0 +1,23 @@
+package com.user.service.repositary;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.user.service.entity.User;
+
+
+public class UserRepositaryImpl{
+	
+    @Autowired
+    private UserRepositary repositary;
+	
+	public User saveUser(User user) {
+		User newUser = repositary.save(user);
+		return newUser;
+	}
+
+	
+	
+	
+	
+	
+}

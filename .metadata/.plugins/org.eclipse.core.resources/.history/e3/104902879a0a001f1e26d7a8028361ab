@@ -1,0 +1,20 @@
+package com.user.service.externalcontroller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.user.service.entity.Hotel;
+import com.user.service.externalservice.HotelService;
+
+@RestController
+@RequestMapping("/hotel")
+public class HotelController {
+	
+	@Autowired
+	private HotelService service;
+	
+	public Hotel createHotel(Hotel hotel) {
+		return service.saveHotel(hotel).getBody();
+	}
+}

@@ -1,0 +1,8 @@
+package com.user.service.exceptions;
+
+public class ResourcesNotFoundExceptions extends RuntimeException{
+	
+	public ResourcesNotFoundExceptions(Long id) {
+		super("User Not Found with this "+id);
+	}
+}

@@ -1,0 +1,11 @@
+package com.user.service.repositary;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.Repository;
+
+import com.user.service.entity.User;
+
+public interface UserRepositary extends Repository<User, Long>{
+	
+}
