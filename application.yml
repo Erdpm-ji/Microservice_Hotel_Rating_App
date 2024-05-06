@@ -1,5 +1,6 @@
 spring:
-  application: user-default
+  application:
+    name: USER-test
 
 eureka:
   instance:
